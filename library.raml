@@ -1,0 +1,17 @@
+#%RAML 1.0 Library
+traits:
+  SC404: !include /Trait/StatusCode404.raml
+  SC500: !include /Trait/StatusCode500.raml
+types:
+  CDType: !include /DataTypes/Category.raml
+  ODType: !include /DataTypes/Order.raml
+  PDType: !include /DataTypes/Product.raml
+  UDType: !include /DataTypes/User.raml
+securitySchemes:
+  oathsecurity: !include /Security/security.raml
+resourceTypes:
+  Collections: !include /Resource Type/get.raml  
+annotationTypes: 
+  Anno: !include /Annotation/annotation.raml
+  
+  
